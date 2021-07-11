@@ -126,7 +126,7 @@ opponentHpValue.value = 1;
 
 opponentMaxLv = Math.max(opponentLv, opponentMaxLv)
 
-bankedPP = Math.floor(opponentMaxLv - 0.1 / 5)
+bankedPP = Math.floor((opponentMaxLv - 0.1) / 5)
 document.getElementById("bankedPP").innerHTML = bankedPP;
 
 }
