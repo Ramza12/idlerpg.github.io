@@ -367,7 +367,7 @@ function addstat8() {
 
 if (prestigePoint <= 0.99) {
 } else {
-stat8 = (Math.floor((stat8 + 0.05)*100)/100);
+stat8 = (Math.floor((stat8 + 0.1)*100)/100);
 modifiedstat8 = stat8*100-100;
 modifiedstat8 = modifiedstat8.toFixed(0);
 prestigePoint -= 1;
