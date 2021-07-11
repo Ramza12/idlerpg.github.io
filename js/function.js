@@ -126,7 +126,7 @@ opponentHpValue.value = 1;
 
 opponentMaxLv = Math.max(opponentLv, opponentMaxLv)
 
-bankedPP = Math.floor(opponentMaxLv / 5)
+bankedPP = Math.floor(opponentMaxLv - 0.1 / 5)
 document.getElementById("bankedPP").innerHTML = bankedPP;
 
 }
@@ -245,9 +245,21 @@ opponentLv = 1;
 playerLv = 1;
 playerXp = 0;
 toNext = 100;
+playerAtk = 10;
+playerDef = 10;
+playerMaxHp = 100;
+playerPen = 2;
 document.getElementById("toNextBar").value = 0;
 document.getElementById("toNext").innerHTML = toNext;
 document.getElementById("prestigePoint").innerHTML = prestigePoint;
+modifiedAtk = Math.floor(playerAtk * stat5);
+modifiedDef = Math.floor(playerDef * stat6);
+modifiedMaxHp = Math.floor(playerMaxHp * stat7);
+modifiedPen = Math.floor(playerPen * stat8);
+document.getElementById("playerAtk").innerHTML = modifiedAtk;
+document.getElementById("playerDef").innerHTML = modifiedDef;
+document.getElementById("playerMaxHp").innerHTML = modifiedMaxHp;
+document.getElementById("playerPen").innerHTML = modifiedPen;
 recalculate();
 }
 
