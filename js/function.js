@@ -460,6 +460,10 @@ if (typeof LoadFile.stat5 !=="undefined") stat5  = LoadFile.stat5
 if (typeof LoadFile.stat6 !=="undefined") stat6  = LoadFile.stat6 
 if (typeof LoadFile.stat7 !=="undefined") stat7  = LoadFile.stat7 
 if (typeof LoadFile.stat8 !=="undefined") stat8  = LoadFile.stat8 
+if (typeof LoadFile.modifiedstat5 !=="undefined") stat5  = LoadFile.modifiedstat5 
+if (typeof LoadFile.modifiedstat6 !=="undefined") stat6  = LoadFile.modifiedstat6 
+if (typeof LoadFile.modifiedstat7 !=="undefined") stat7  = LoadFile.modifiedstat7 
+if (typeof LoadFile.modifiedstat8 !=="undefined") stat8  = LoadFile.modifiedstat8 
 
 
 document.getElementById("playerName").innerHTML = playerName;
