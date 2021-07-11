@@ -254,6 +254,7 @@ playerAtk = 10;
 playerDef = 10;
 playerMaxHp = 100;
 playerPen = 2;
+document.getElementById("playerLv").innerHTML = playerLv;
 document.getElementById("toNextBar").value = 0;
 document.getElementById("toNext").innerHTML = toNext;
 document.getElementById("prestigePoint").innerHTML = prestigePoint;
