@@ -96,9 +96,13 @@ opponentWin();
 playerWin();
 }
 
-Save();
-
 }, 100); // 1000ms = 1 second
+
+setInterval(function() {
+Save();
+}, 100);
+
+
 
 function recalculate() {
 
