@@ -142,10 +142,6 @@ if (stayLevel.checked) {
 opponentLv += 1;
 }
 
-if (opponentMaxLv != opponentLv) {
-opponentMaxLv += 1
-}
-
 if (playerXp >= toNext) {
 levelUp();
 }
