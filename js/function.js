@@ -486,9 +486,9 @@ document.getElementById("atkPerLv").innerHTML = stat1;
 document.getElementById("defPerLv").innerHTML = stat2;
 document.getElementById("hpPerLv").innerHTML = stat3;
 document.getElementById("penPerLv").innerHTML = stat4;
-document.getElementById("bonusAtk").innerHTML = modifiedstat5
-document.getElementById("bonusDef").innerHTML = modifiedstat6
-document.getElementById("bonusHp").innerHTML = modifiedstat7
-document.getElementById("bonusPen").innerHTML = modifiedstat8
+document.getElementById("bonusAtk").innerHTML = stat5;
+document.getElementById("bonusDef").innerHTML = stat6;
+document.getElementById("bonusHp").innerHTML = stat7;
+document.getElementById("bonusPen").innerHTML = stat8;
 
 }
