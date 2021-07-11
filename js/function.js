@@ -109,7 +109,7 @@ function recalculate() {
 opponentAtk = Math.ceil(5 + (2*(opponentLv-1)) + (3*(opponentLv-1)**1.2));
 opponentDef = Math.ceil(2 + (opponentLv-1) + (2*(opponentLv-1)**1.2));
 opponentPen = Math.ceil(0 + (opponentLv-1) + ((opponentLv-1)**1.15));
-opponentMaxHp = Math.ceil(50 + (5*(opponentLv-1)) + (5*(opponentLv-1)**1.3));
+opponentMaxHp = Math.ceil(50 + (5*(opponentLv-1)) + (5*(opponentLv-1)**1.5));
 opponentCurrentHp = opponentMaxHp;
 xpGain = -1 + 3*(opponentLv);
 
@@ -166,7 +166,7 @@ function levelUp() {
 
 playerXp = playerXp - toNext;
 playerLv += 1;
-toNext = 50 + ( 50*(playerLv)) + Math.floor(Math.floor((60*(playerLv)^1.55)*50)/100)
+toNext = 50 + ( 50*(playerLv)) + Math.floor(Math.floor((60*(playerLv)**1.55)*50)/100)
 
 toNextBar = playerXp/toNext;
 document.getElementById("toNextBar").value = toNextBar;
