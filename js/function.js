@@ -166,7 +166,7 @@ function levelUp() {
 
 playerXp = playerXp - toNext;
 playerLv += 1;
-toNext = 50 + ( 50*(playerLv)) + Math.floor(Math.floor((60*(playerLv)**1.55)*50)/100)
+toNext = 50 + ( 50*(playerLv)) + Math.floor(Math.floor((60*(playerLv)**1.5)*50)/100)
 
 toNextBar = playerXp/toNext;
 document.getElementById("toNextBar").value = toNextBar;
