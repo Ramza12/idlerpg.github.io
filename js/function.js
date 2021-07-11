@@ -247,6 +247,7 @@ if (areYouSure == false) {
 prestigePoint += bankedPP;
 bankedPP = 0;
 opponentLv = 1;
+opponentMaxLv = 1;
 playerLv = 1;
 playerXp = 0;
 toNext = 100;
