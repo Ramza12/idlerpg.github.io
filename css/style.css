@@ -1,0 +1,133 @@
+* {
+box-sizing: border-box;
+font-family: Helvetica, Arial, sans-serif;
+}
+
+#redminion {
+height: auto;
+width: 350;
+margin-right: 100px;
+padding-top: 80;
+}
+
+#blueminion {
+height: auto;
+width: 380;
+margin-right: 100px;
+padding-top: 80;
+}
+
+.player, .opponent, .perks {
+line-height: 0.6;
+border-style: solid;
+padding: 0px 0px 0px 5px;
+margin: auto;
+}
+
+.player {
+float: left;
+border-color: blue;
+background-color: azure;
+width: 49%;
+position: relative;
+}
+
+#filler {
+visibility: hidden;
+border-width: 0;
+}
+
+.opponent {
+float: right;
+border-color: red;
+background-color: lightpink;
+width: 49%
+}
+
+.interface {
+display: block;
+border-color: green;
+border-style: solid;
+position: absolute;
+max-width: 200px;
+bottom: 10%;
+right: 10%;
+padding: 10%;
+background-color: DarkSeaGreen;
+}
+
+.atkaction {
+position: absolute;
+bottom: 60%;
+right: 20%;
+}
+
+.prestige {
+position: absolute;
+bottom: 40%;
+right: 32%;
+}
+
+table {
+border-collapse: collapse;
+margin-left: 40px;
+}
+
+td, th {
+border-style: solid;
+padding: 5px;
+border-width: 0px;
+border-bottom: 2px solid;
+text-align: center;
+}
+
+.addstat {
+border-bottom: 0;
+}
+
+.addstatbtn {
+border-width: 0;
+background-color: CornflowerBlue;
+}
+
+.action {
+border-width: 0;
+background-color: DarkOrange;
+padding: 4px 2px;
+}
+
+#nextlv, #prevlv {
+border-width: 0;
+}
+
+img {
+display: block;
+float: right;
+padding-top: 120;
+padding-right: 220;
+}
+
+header {
+font-size: 30px;
+font-family: Garamond, Georgia, serif;
+padding: 8px;
+background-color: MediumSeaGreen;
+color: white
+}
+
+footer:first-of-type {
+text-align: center;
+padding: 4px;
+background-color: DarkSalmon;
+color: white
+}
+
+.space {
+margin-top: 320px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

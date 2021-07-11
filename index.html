@@ -1,0 +1,114 @@
+<html>
+
+  <head>
+    <title>  Idle RPG  </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+<body onload="Load()">
+
+<header>Idle RPG <i class="material-icons">filter_drama</i></header>
+<div class="player">
+<img id="blueminion" src="files/blue-minion.png"></img>
+<p><span id="playerName">Player</span></p>
+<p>Level: <span id="playerLv">1</span><button id="filler"> < </button><input type="checkbox" id="filler">  </p>
+<p>Experience: <span id="playerXp">0</span>/<span id="toNext">100</span> </p>
+<progress id="toNextBar" value="0"></progress>
+<p>Health Points: <span id="playerCurrentHp">100</span></p><p>Max Health Points: <span id="playerMaxHp">100<span></p>
+<progress id="playerHpBar" value="1"></progress>
+<p>Offensive Power: <span id="playerAtk">10</span></p>
+<p>Defensive Power: <span id="playerDef">10</span></p>
+<p>Penetration Power: <span id="playerPen">5</span></p>
+<div class="interface">
+<button onclick="attackAction()" class="atkaction action">Attack Opponent</button>
+<button onclick="prestige()" class="prestige action">Prestige!</button>
+</div>
+</div>
+
+
+
+<div class="opponent">
+<img id="redminion" src="files/red-minion.png"></img>
+<p>Opponent</p>
+<p>Level: <span id="opponentLv">1</span> 
+<button id="prevLv" onclick="prevLevel()"> < </button>
+<button id="nextLv" onclick="nextLevel()"> > </button>
+<input type="checkbox" id="keepLv"><label for="keepLv">Keep current level</label></p>
+<p>Experience Gained: <span id="xpGain">1</span></p>
+<progress id="filler" value="1"></progress>
+<p>Health Points: <span id="opponentCurrentHp">50</span></p><p>Max Health Points: <span id="opponentMaxHp">50</span></p>
+<progress id="opponentHpBar" value="1"></progress>
+<p>Offensive Power: <span id="opponentAtk">2</span></p>
+<p>Defensive Power: <span id="opponentDef">2</span></p>
+<p>Penetration Power: <span id="opponentPen">0</span></p>
+</div>
+
+<div class="space"></div>
+
+<div class="clearfix">
+<img id="loop" src="files/loop.gif"></img>
+<div class="perks">
+<h3>Prestige Points: <span id="prestigePoint">0</span> <h4>(Every 5 opponent levels passed will grant prestige points. Prestige to collect <span id="bankedPP">0</span> prestige points.)</h4></h3>
+<table>
+<tr>
+<th>Perks Description</th>
+<th>Current Bonus</th>
+</tr>
+<tr>
+<td>Increase Offensive Power per player level by +2</td>
+<td>+<span id="atkPerLv">2</span> per level</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat1()"> + </button></td>
+<tr/>
+<tr>
+<td>Increase Defensive Power per player level by +2</td>
+<td>+<span id="defPerLv">2</span> per level</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat2()"> + </button></td>
+</tr>
+<tr>
+<td>Increase Health Points per player level by +10</td>
+<td>+<span id="hpPerLv">10</span> per level</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat3()"> + </button></td>
+</tr>
+<tr>
+<td> Increase Penetration Power per player level by +1</td>
+<td>+<span id="penPerLv">1</span> per level</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat4()"> + </button></td>
+</tr>
+<tr>
+<td> Provides a +5% bonus to Offensive Power</td>
+<td>+<span id="bonusAtk">0</span>% bonus</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat5()"> + </button></td>
+</tr>
+<tr>
+<td> Provides a +5% bonus to Defensive Power</td>
+<td>+<span id="bonusDef">0</span>% bonus</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat6()"> + </button></td>
+</tr>
+<tr>
+<td> Provides a +5% bonus to Health Points</td>
+<td>+<span id="bonusHp">0</span>% bonus</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat7()"> + </button></td>
+</tr>
+<tr>
+<td> Provides a +5% bonus to Penetration Power</td>
+<td>+<span id="bonusPen">0</span>% bonus</td>
+<td class="addstat"><button class="addstatbtn" onclick="addstat8()"> + </button></td>
+</tr>
+</table>
+<br><br><br>
+</div>
+</div>
+
+
+<script src="js/function.js"></script>
+
+<footer>
+<p>This is an experimental browser game, and my first real project. This game is fully enjoyed at full screen. Shrinking the browser size may affect the quality of play.</p>
+<p>The refresh rate is 100ms. Best screen resolution to play is in 1920x1080</p>
+</footer>
+<footer>
+<p><button onclick="changeName()">Change Player Name</button></p>
+</footer>
+</body>
+
+</html>
