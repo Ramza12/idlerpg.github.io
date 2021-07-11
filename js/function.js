@@ -335,7 +335,7 @@ stat6 = (Math.floor((stat6 + 0.05)*100)/100);
 modifiedstat6 = stat6*100-100;
 modifiedstat6 = modifiedstat6.toFixed(0);
 prestigePoint -= 1;
-document.getElementById("bonusAtk").innerHTML = modifiedstat6;
+document.getElementById("bonusDef").innerHTML = modifiedstat6;
 }
 
 }
@@ -348,7 +348,7 @@ stat7 = (Math.floor((stat7 + 0.05)*100)/100);
 modifiedstat7 = stat7*100-100;
 modifiedstat7 = modifiedstat7.toFixed(0);
 prestigePoint -= 1;
-document.getElementById("bonusAtk").innerHTML = modifiedstat7;
+document.getElementById("bonusHp").innerHTML = modifiedstat7;
 }
 
 }
@@ -361,7 +361,7 @@ stat8 = (Math.floor((stat8 + 0.05)*100)/100);
 modifiedstat8 = stat8*100-100;
 modifiedstat8 = modifiedstat8.toFixed(0);
 prestigePoint -= 1;
-document.getElementById("bonusAtk").innerHTML = modifiedstat8;
+document.getElementById("bonusPen").innerHTML = modifiedstat8;
 }
 
 }
