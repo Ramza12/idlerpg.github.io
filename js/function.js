@@ -35,10 +35,10 @@ stat5 = 1;
 stat6 = 1;
 stat7 = 1;
 stat8 = 1;
-modifiedstat5 = 0;
-modifiedstat6 = 0;
-modifiedstat7 = 0;
-modifiedstat8 = 0;
+modifiedstat5 = 1;
+modifiedstat6 = 1;
+modifiedstat7 = 1;
+modifiedstat8 = 1;
 checkbox = "";
 
 function changeName() {
