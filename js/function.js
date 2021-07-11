@@ -245,6 +245,7 @@ var areYouSure = confirm("Are you sure you want to prestige? Your progress will 
 if (areYouSure == false) {
 } else {
 prestigePoint += bankedPP;
+bankedPP = 0
 opponentLv = 1;
 playerLv = 1;
 playerXp = 0;
