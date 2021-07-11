@@ -257,6 +257,7 @@ playerPen = 2;
 document.getElementById("toNextBar").value = 0;
 document.getElementById("toNext").innerHTML = toNext;
 document.getElementById("prestigePoint").innerHTML = prestigePoint;
+document.getElementById("bankedPP").innerHTML = bankedPP;
 modifiedAtk = Math.floor(playerAtk * stat5);
 modifiedDef = Math.floor(playerDef * stat6);
 modifiedMaxHp = Math.floor(playerMaxHp * stat7);
@@ -277,7 +278,7 @@ if (prestigePoint <= 0.99) {
 stat1 += 2;
 prestigePoint -= 1;
 document.getElementById("atkPerLv").innerHTML = stat1;
-
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -289,6 +290,7 @@ if (prestigePoint <= 0.99) {
 stat2 += 2;
 prestigePoint -= 1;
 document.getElementById("defPerLv").innerHTML = stat2;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -300,6 +302,7 @@ if (prestigePoint <= 0.99) {
 stat3 += 10;
 prestigePoint -= 1;
 document.getElementById("hpPerLv").innerHTML = stat3;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -311,6 +314,7 @@ if (prestigePoint <= 0.99) {
 stat4 += 1;
 prestigePoint -= 1;
 document.getElementById("penPerLv").innerHTML = stat4;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -324,6 +328,7 @@ modifiedstat5 = stat5*100-100;
 modifiedstat5 = modifiedstat5.toFixed(0);
 prestigePoint -= 1;
 document.getElementById("bonusAtk").innerHTML = modifiedstat5;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -337,6 +342,7 @@ modifiedstat6 = stat6*100-100;
 modifiedstat6 = modifiedstat6.toFixed(0);
 prestigePoint -= 1;
 document.getElementById("bonusDef").innerHTML = modifiedstat6;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -350,6 +356,7 @@ modifiedstat7 = stat7*100-100;
 modifiedstat7 = modifiedstat7.toFixed(0);
 prestigePoint -= 1;
 document.getElementById("bonusHp").innerHTML = modifiedstat7;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
@@ -363,6 +370,7 @@ modifiedstat8 = stat8*100-100;
 modifiedstat8 = modifiedstat8.toFixed(0);
 prestigePoint -= 1;
 document.getElementById("bonusPen").innerHTML = modifiedstat8;
+document.getElementById("prestigePoint").innerHTML = prestigePoint;
 }
 
 }
